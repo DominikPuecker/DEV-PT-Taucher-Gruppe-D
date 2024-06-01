@@ -101,4 +101,3 @@ jobs:
         COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
       run:  cosign verify --key cosign.pub ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-######
