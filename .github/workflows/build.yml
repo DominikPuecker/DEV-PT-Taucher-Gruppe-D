@@ -9,7 +9,6 @@ on:
     - main
 
 jobs:
-
   lint:
     runs-on: ubuntu-latest
 
@@ -27,6 +26,21 @@ jobs:
 
     - name: Run ESLint
       run: npm run lint
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install App
+      run: npm install
+    
+    - name: Run Unit Tests
+      run: npx mocha test/index.test.js --reporter json > test-report.json
+    
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v4
+      with:
+          name: Unit-Test-Results
+          path: test-report.json
 
   build-backend:
     runs-on: ubuntu-latest
@@ -53,11 +67,7 @@ jobs:
       with:
           node-version: 20
     
-    - name: Install App
-      run: npm install
     
-    - name: Run Unit Tests
-      run: npx mocha test/index.test.js 
     
     -  name: Set up Docker Buildx
        uses: docker/setup-buildx-action@v3
@@ -112,8 +122,3 @@ jobs:
         COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
       run:  cosign verify --key cosign.pub ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
     
-    #- name: Upload Test Results
-    #  uses: actions/upload-artifact@v4
-    #  with:
-    #      name: Unit-Test-Results
-    #      path: test-report.json
