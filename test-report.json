@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-01T12:43:52.447Z",
+    "end": "2024-06-01T12:43:52.503Z",
+    "duration": 56
+  },
+  "tests": [
+    {
+      "title": "should return Hello World",
+      "fullTitle": "Notes API GET / should return Hello World",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 28,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return all notes",
+      "fullTitle": "Notes API GET /api/notes should return all notes",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return a note by the given id",
+      "fullTitle": "Notes API GET /api/notes/:id should return a note by the given id",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return 404 if note is not found",
+      "fullTitle": "Notes API GET /api/notes/:id should return 404 if note is not found",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should create a new note",
+      "fullTitle": "Notes API POST /api/notes should create a new note",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return 400 if content is missing",
+      "fullTitle": "Notes API POST /api/notes should return 400 if content is missing",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should delete a note by the given id",
+      "fullTitle": "Notes API DELETE /api/notes/:id should delete a note by the given id",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should return Hello World",
+      "fullTitle": "Notes API GET / should return Hello World",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 28,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return all notes",
+      "fullTitle": "Notes API GET /api/notes should return all notes",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return a note by the given id",
+      "fullTitle": "Notes API GET /api/notes/:id should return a note by the given id",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return 404 if note is not found",
+      "fullTitle": "Notes API GET /api/notes/:id should return 404 if note is not found",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should create a new note",
+      "fullTitle": "Notes API POST /api/notes should create a new note",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should return 400 if content is missing",
+      "fullTitle": "Notes API POST /api/notes should return 400 if content is missing",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should delete a note by the given id",
+      "fullTitle": "Notes API DELETE /api/notes/:id should delete a note by the given id",
+      "file": "C:\\Users\\Helmut\\VSCode-Projekte\\DEV-PT-Gruppe-D-Taucher\\test\\index.test.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}
