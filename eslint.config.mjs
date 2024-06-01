@@ -1,13 +1,18 @@
-import pluginJs from 'plugin-js'; // Replace with actual plugin import
-import globals from 'globals'; // Replace with actual globals import
+import eslintPluginJs from '@stylistic/eslint-plugin-js';
+import globals from 'globals'; // Ensure 'globals' is installed and imported correctly
 
-export default {
-  parserOptions: {
-    sourceType: "script",
+export default [
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      parserOptions: {
+        sourceType: "script",
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+    ...eslintPluginJs.configs.recommended,
   },
-  globals: {
-    ...globals.browser,
-    ...globals.node,
-  },
-  ...pluginJs.configs.recommended,
-};
+];
