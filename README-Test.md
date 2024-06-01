@@ -3,21 +3,24 @@
 Die ESLint-Konfiguration wurde wie folgt festgelegt:
 
 ```javascript
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import eslintPluginJs from '@stylistic/eslint-plugin-js';
+import globals from 'globals'; // Ensure 'globals' is installed and imported correctly
 
-export default {
-  overrides: [
-    {
-      files: ["**/*.js"],
+export default [
+  {
+    files: ["**/*.js"],
+    languageOptions: {
       parserOptions: {
         sourceType: "script",
       },
-      languageOptions: { globals: { ...globals.browser, ...globals.node } },
-      ...pluginJs.configs.recommended,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
     },
-  ],
-};
+    ...eslintPluginJs.configs.recommended,
+  },
+];
 ```
 
 Diese Konfiguration ermöglicht die statische Analyse von JavaScript-Dateien gemäß den empfohlenen Regeln von ESLint und berücksichtigt globale Variablen aus Browser- und Node.js-Umgebungen.
