@@ -1,4 +1,4 @@
-const express = require('express');
+
 const assert = require('assert');
 const http = require('http');
 const app = require('../src/index');
