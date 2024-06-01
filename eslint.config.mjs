@@ -1,15 +1,13 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import pluginJs from 'plugin-js'; // Replace with actual plugin import
+import globals from 'globals'; // Replace with actual globals import
 
 export default {
-  overrides: [
-    {
-      files: ["**/*.js"],
-      parserOptions: {
-        sourceType: "script",
-      },
-      languageOptions: { globals: { ...globals.browser, ...globals.node } },
-      ...pluginJs.configs.recommended,
-    },
-  ],
+  parserOptions: {
+    sourceType: "script",
+  },
+  globals: {
+    ...globals.browser,
+    ...globals.node,
+  },
+  ...pluginJs.configs.recommended,
 };
