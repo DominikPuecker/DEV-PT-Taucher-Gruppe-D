@@ -65,3 +65,6 @@ Dieser Befehl exportiert den Testbericht im JSON-Format in die Datei `test-repor
 ## package.json "type" auf "commonjs" setzen
 
 In der `package.json` wurde der Typ auf "commonjs" gesetzt, um anzugeben, dass es sich um eine CommonJS-Anwendung handelt. Dies ist wichtig, um sicherzustellen, dass Node.js die Module entsprechend interpretiert.
+
+
+#####
